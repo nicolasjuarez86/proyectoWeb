@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+  }
+ 
+  header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Imagenes/fondo-homeland.jpg);
+    background-size: cover;
+ }
+ 
+ img{
+    width: 160px;
+    height: 160px;
+    padding-left: 60px;
+ }
+ 
+ /* aca va todo lo que es la NAV bar */
+ 
+ .navbar .logo {
+    top: 35px;
+    right: 800px;
+    left: 70px;
+ }
+ 
+  .navbar {
+     position: absolute;
+     padding: 40px;
+     display:flex;
+     justify-content: space-between;
+     width: 100%;
+     box-sizing: border-box;
+     align-items: center;
+     background-color: rgba(46, 47, 48, 0.582);
+  
+  }
+ 
+  .navbar a {
+     color:rgb(231, 230, 230); 
+     font-size: 30px;
+  }
+ 
+ .navbar .nav-links ul {
+ 
+     display: flex;
+ }
+ 
+ .navbar .nav-links ul li {
+ 
+     margin: 0 30px;
+ }
+ 
+ .navbar .menu-burguer {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+ 
+ }
+ 
+ /* aca va para que sea responsive */
+ 
+ @media screen and (max-width: 890px) 
+ 
+ { 
+ .nav-links {
+ 
+    display: none;
+ }
+    
+ }
+ 
