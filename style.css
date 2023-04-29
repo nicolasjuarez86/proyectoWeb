@@ -5,6 +5,10 @@
     list-style: none;
     
   }
+li {
+   font-family: 'Fira Code', monospace;
+   
+}
  
   header {
     height: 100vh;
