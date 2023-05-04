@@ -181,7 +181,7 @@ header {
   width: 1200px;
   height: 600px;
   max-width: 1920px;
-  background-color: rgba(179, 206, 197, 0.459);
+  background-color: rgba(179, 206, 197, 0.342);
   justify-content: center;
   position: relative;
   margin: 60px 350px 60px 350px;
@@ -257,7 +257,7 @@ header {
 }
 
 .slide {
-  width: 70%;
+  width: 30%;
   transition: 3s;
 }
 
@@ -301,12 +301,12 @@ header {
   margin-left: 0%;
   
 }
-#radio1:checked ~ .first{
-  margin-left: -20%;
+#radio2:checked ~ .first{
+  margin-left: -30%;
   
 }
-#radio1:checked ~ .first{
-  margin-left: -40%;
+#radio3:checked ~ .first{
+  margin-left: -60%;
   
 }
 
