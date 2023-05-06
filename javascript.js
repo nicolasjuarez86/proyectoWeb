@@ -31,3 +31,17 @@ var contador =  1
             contador = 1;
         }
     }, 5000);
+
+
+const burgerBtn = document.querySelector('.burger-btn')
+const burgerBtnIcon = document.querySelector('.burger-btn i')
+const dropDownMenu = document.querySelector('.dropdown-menu')
+
+burgerBtn.onclick = function() {
+    dropDownMenu.classList.burger('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    burgerBtnIcon.classList =isOpen
+    ? 'fa fa-bars'
+    : 'fa fa-bars'
+}

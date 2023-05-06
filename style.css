@@ -63,8 +63,7 @@ header {
      align-items: center;
     /* background-color: rgba(46, 47, 48, 0.582);
      background-color:rgba(0, 0, 0, 0.356);*/
-     
-  
+       
   }
  
  .navbar a {
@@ -83,13 +82,55 @@ header {
      margin: 0 30px;
  }
  
- /* seccion de los contenedores*/
 
+/* dropdown-menu para el responsive*/
+
+.dropdown-menu {
+  display: none;
+  position:absolute;
+  right: 20px;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu  li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+
+}
+
+.dropdown-menu.open{
+  height: 240px;
+}
+.dropdown-menu a{
+  color: aliceblue;
+}
+.navbar .burger-btn{
+  color: aliceblue;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  padding-bottom: 120px;
+  font-size: 40px;
+  
+ 
+}
+
+ /* seccion de los contenedores*/
+ 
 
 .contenedor {
   padding: 5px;
   padding-left: 50px;
-  background-color: rgba(249, 250, 250, 0.658);
+  background-color: rgba(191, 194, 194, 0.548);
   border-radius: 2px;
   justify-content: center;
   margin: 60px 200px 60px 200px;
@@ -102,11 +143,10 @@ header {
   height: 500px;
   padding-left: 50px;
   position: relative;
-
   
 }
 
-.lado {
+.lado1 {
   box-sizing: border-box;
   border: solid 2px rgba(245, 11, 11, 0.788);
   background-color: rgb(31, 209, 209);
@@ -114,30 +154,21 @@ header {
   width: 490px;
   height: 400px;
   align-items: center;
+  margin-top: 40px;
 
 }
 
-.lado {
+.lado2 {
   box-sizing: border-box;
   border: solid 2px rgba(245, 11, 11, 0.788);
   background-color: rgb(31, 209, 209);
+  margin-top: 40px;
+  width: 490px;
+  height: 400px;
  
 
 }
  
- /* aca va para que sea responsive */
- 
- @media screen and (max-width: 890px) 
- 
- { 
- .nav-links {
- 
-    display: none;
- }
-    
- }
- 
-
  /*seccion del footer */
 
  .footer {
@@ -147,8 +178,7 @@ header {
    position: relative;
    bottom: 0px;
    max-width: 100%;
-   
- 
+    
  }
 
  .footer .redes-sociales {
@@ -175,13 +205,13 @@ header {
    opacity: 0.9;
  }
 
-
+/*  contenedor que contiene el carrousel */
 
 .carrousel {
-  width: 1200px;
+  width: 1170px;
   height: 600px;
   max-width: 1920px;
-  background-color: rgba(179, 206, 197, 0.342);
+  background-color: rgba(200, 207, 205, 0.384);
   justify-content: center;
   position: relative;
   margin: 60px 350px 60px 350px;
@@ -191,63 +221,16 @@ header {
 }
 
 
-/*-
-.carrousel .galeria {
-  width: 200%;
-  background-color: blueviolet;
-
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-
-  transition: all 5s ease;
-  transform: translateX(-50%);
-  
-
-}
 /*
-.carrousel .img{
-  width: calc( 100% /2);
-  min-height: 50vh;
-  background-color: blue;
-
-}
-/*
-.carrousel .puntos{
-  width: 90%;
-  background-color: rgba(188, 129, 243, 0.658);
-  margin: 16px 16px 16px 16px ;
-
-
   display: flex;                           /*para alinear los puntos */
  /* flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
 */
-/*
-.carrousel .punto{
-  width: 16px;
-  height: 16px;
-  margin: 16px;
-  padding: 16px;
-  background-color: rgb(162, 252, 17);
-}
-
-.carrousel .punto.activo{
-  background-color: rgb(253, 18, 194);
-
-}
-
-
-*/
   
-
-
 .slider {
-  width:400%;
+  width: 330%;
   height: 500px;
   display: flex;
 }
@@ -256,9 +239,10 @@ header {
   display: none;
 }
 
+
 .slide {
   width: 30%;
-  transition: 3s;
+  transition: 2s;
 }
 
 .slide .img{
@@ -281,7 +265,7 @@ header {
 }
 
 .slide-btn {
-  border: 2px solid rgb(185, 185, 184);
+  border: 3px solid rgba(172, 172, 172, 0.76);
   padding: 5px;
   cursor: pointer;
   transition: 1s;
@@ -321,7 +305,7 @@ header {
   
 }
 .auto-slide div{
-   border: 2px solid rgb(239, 247, 228);
+   border: 3px solid rgba(224, 223, 223, 0.801);
    padding: 5px;
    border-radius: 7px;
    transition: 1s;
@@ -342,4 +326,72 @@ header {
 #radio3:checked ~ .auto-slide .auto-btn3{
   background-color: rgb(236, 203, 11);
   
+}
+
+
+
+/*FORMULARIO*/
+
+h2 {
+  font-size: 20px;
+  color: rgb(15, 15, 15);
+  text-align: center;
+}
+form{
+  background: #b1b0b0d7;
+  padding: 30px 0;
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+  margin-left: 10px;
+}
+
+.form .mini-caja{
+
+  position: relative;
+  margin: 15px;
+}
+
+button { 
+  border: none;
+  display: block;
+  width: 80%;
+  margin: auto;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+ /* aca va para que sea responsive */
+ 
+ @media screen and (max-width: 890px) 
+ 
+ { 
+ .nav-links {
+   display: none;
+ }
+ 
+ .navbar .burger-btn{
+  display: block;
+ }
+
+ .dropdown-menu{
+  display: block;
+ }
+ .footer{
+  width: 100%;
+ }
+
+
+ }
+
+ @media screen and (max-width: 412px) 
+{
+  .dropdown-menu{
+    display: block;
+   }
+}
+
+.footer{
+  width: 100%;
 }
