@@ -1,3 +1,5 @@
+/** GLIDER CARROUSEL **/
+
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.glider'), {
         slidesToShow: 1,
@@ -8,7 +10,10 @@ window.addEventListener('load', function(){
           next: '.glider-next'
         }      
     })
-  })
+})
+
+
+
 
 
 

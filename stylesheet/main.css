@@ -5,8 +5,8 @@
 
 :root {
 
-    --brand-primary: #27b4df;
-    --brand-primary-rgba: rgba(39,180,223,0.7);
+    --brand-primary: #DDD;
+    --brand-primary-rgba: rgba(221,221,221,0.7);
 
 }
 .content-container {
@@ -113,7 +113,9 @@ img {
 
 
 
-/****** FRONTPAGE ******/
+/****** SECTION FRONTPAGE ******/
+
+
 
 
 /** SLIDEHOME **/
@@ -161,7 +163,7 @@ img {
     flex:1;
 }
 
-/** PRODUCTOS **/
+/** SECTION PRODUCTOS **/
 
 .Productos {
     padding: 20px;
