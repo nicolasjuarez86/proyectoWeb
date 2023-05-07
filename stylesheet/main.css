@@ -88,9 +88,9 @@ img {
 }
 .Header-logo {
     display: block;
-    background: url(../images/logo.png) no-repeat left center/cover;
-    width: 100px;
-    height: 100px;
+    background: url(../images/homeland-logo-blue.png) no-repeat left center/cover;
+    width: 140px;
+    height: 130px;
 }
 
 
