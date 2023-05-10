@@ -23,52 +23,49 @@
 
     <header class="Header">
         
-            <div class="Header-content">
-                <a class="Header-logo"></a>
-                <nav id = nav1>
-                    <ul class="Menu">
-                        <li class="Menu-item"><a class="Menu-link" href="index.html">Home</a></li>
-                        <li class="Menu-item"><a class="Menu-link" href="productos.html">Productos</a></li>
-                        <li class="Menu-item"><a class="Menu-link" href="">Nosotros</a></li>
-                        <li class="Menu-item"><a class="Menu-link" href="">Contacto</a></li>
-                    </ul>
-                </nav>
-        <div class="content-container">      <!--modifique el div porque no me dejaba editar el nav-->  
-                <div class="Sidebar">
-                    <nav class="navbar navbar-light bg-light fixed-top">
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">TURISMO</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Sobre Nosotros</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Productos</a>
-                                                                                      
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Contacto</a>
-                                        </li>                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
+        <div class="Header-content content-container">
+            <a class="Header-logo"></a>
+            <nav>
+                <ul class="Menu">
+                <li class="Menu-item"><a class="Menu-link" href="index.html">Home</a></li>
+                <li class="Menu-item"><a class="Menu-link" href="productos.html">Productos</a></li>
+                <li class="Menu-item"><a class="Menu-link" href="">Nosotros</a></li>
+                <li class="Menu-item"><a class="Menu-link" href="">Contacto</a></li>
+                </ul>
+            </nav>                
+            <div class="Sidebar">
+                <nav class="navbar navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">TURISMO</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-     
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                                                            
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>                                        
+                </ul>
+                </div>
+                </div>
+                </div>
+                </nav>
             </div>
-          
+
         </div>
     </header>
 
@@ -77,18 +74,18 @@
     <section>
         <div class="ViewFull Frontpage">
             <div class="SlideHome glider-contain">
-                <div class="glider">
+                <div class="glider"  data-glider="timeout: 5, pager: true">
                     <div class="SlideHome-slide">
-                        <a href=""></a>
+                        <a class="LinkWrapper" href=""></a>
                         <div class="SlideHome-image" style="background-image:url('../images/home/bateria.webp')">
                         </div>
                     </div>
                     <div class="SlideHome-slide">
-                        <a href=""></a>
+                        <a class="LinkWrapper" href=""></a>
                         <div class="SlideHome-image" style="background-image:url('../images/home/gibson.jpg')"></div>
                     </div>
                     <div class="SlideHome-slide">
-                        <a href=""></a>
+                        <a class="LinkWrapper" href=""></a>
                         <div class="SlideHome-image" style="background-image:url('../images/home/piano.jpg')"></div>
                     </div>
                 </div>

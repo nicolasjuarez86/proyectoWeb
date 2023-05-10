@@ -16,8 +16,6 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
     position: relative;
     box-sizing: border-box;
 }
@@ -28,7 +26,7 @@
     bottom: 0;
     left: 0;
     opacity: 0;
-    z-index: 10;    
+    z-index: 1000;    
 }
 
 img {
@@ -101,8 +99,6 @@ img {
     background: url(../images/homeland-logo-blue.png) no-repeat left center/cover;
     width: 140px;
     height: 130px;
-    margin-left: 200px;
-    margin: auto;
 }
 
 
@@ -116,34 +112,11 @@ img {
     padding: 0;
     margin: 30px;
     position: relative;
-    left: 290px;   /*posicione los li a la derecha*/
-
 }
-
 .Menu-link {
     color: #000;
     text-decoration: none;
-
-
-}
-/* estoy agregando esto*/
-.Menu-link a{
-    margin-right: 30px;
-    position: absolute;
-}   
-
-#nav1  ul .Menu{
-   
-     padding: 30px;
-     display:flex;
-     top: 0px;
-     justify-content: space-between;
-     align-items: center;
-     margin: 0 30px;
-    
-       
-   /* preguntar */
-
+    font-size: 16px;
 }
 
 
@@ -180,15 +153,8 @@ img {
 
 /** SLIDEHOME **/
 
-.SlideHome {
-    max-width: 1000px;
-    margin:0;
-    margin-left: 450px;
-   
-}
 .SlideHome-slide {
     position: relative;
-    
 }
 .SlideHome-image {
     height: 500px;
