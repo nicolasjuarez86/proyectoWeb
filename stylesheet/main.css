@@ -1,21 +1,21 @@
 
 
-
 /****** CSS COMUN ******/
 
 :root {
 
-    --brand-primary: #DDD;
-    --brand-primary-rgba: rgba(221,221,221,0.7);
+    --brand-primary: #f7f7f7e5;
+    --brand-primary-rgba: rgba(201, 201, 201, 0.5);
+}
 
+*{
+    box-sizing: border-box;
 }
 .content-container {
     max-width: 1200px;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
     position: relative;
     box-sizing: border-box;
 }
@@ -26,7 +26,7 @@
     bottom: 0;
     left: 0;
     opacity: 0;
-    z-index: 10;    
+    z-index: 1000;    
 }
 
 img {
@@ -34,7 +34,7 @@ img {
     height: auto;
     display: block;
     margin: auto;
-}
+   }
 
 .boton{
     border: 1px solid transparent;
@@ -49,14 +49,16 @@ img {
     display: inline-block;
     font-weight: normal;
     white-space: nowrap;
-    background-color: none;            
+    background-color: none; 
+    margin-top: 100px;             /*puse el boton un poco mas abajo*/
+             
 }
 .boton--primary {
     background-color: var(--brand-primary);
     border-color: var(--brand-primary);
-    color: #FFF;
-}
+    color: #022534;
 
+}
 
 
 /** SIDEBAR **/
@@ -78,19 +80,25 @@ img {
 
 
 .Header {
-    background-color: var(--brand-primary);
+ /*   background-color: var(--brand-primary);*/
+  background-color: rgba(239, 239, 240, 0.685);
+  
+    
 }
 .Header-content {
     padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+   
+
 }
 .Header-logo {
     display: block;
-    background: url(../images/logo.png) no-repeat left center/cover;
-    width: 100px;
-    height: 100px;
+    background: url(../images/homeland-logo-blue.png) no-repeat left center/cover;
+    width: 140px;
+    height: 130px;
 }
 
 
@@ -102,13 +110,38 @@ img {
     list-style: none;
     gap: 30px;
     padding: 0;
-    margin: 0;
+    margin: 30px;
+    position: relative;
 }
-
 .Menu-link {
     color: #000;
     text-decoration: none;
+    font-size: 16px;
 }
+
+
+.Menu ul{
+    margin-right: 30px;
+}
+
+.Menu li{
+    font-size: 30px;
+    font-weight: bold;
+    color: #022534;
+    opacity: 0.7;
+    padding: 15px;
+}
+
+.Menu li:hover {
+    opacity: 0.9;
+  }
+ 
+
+.Menu-link {
+    color: #022534;
+    text-decoration: none;
+}
+
 
 
 
@@ -120,11 +153,6 @@ img {
 
 /** SLIDEHOME **/
 
-.SlideHome {
-    max-width: 1000px;
-    margin:0;
-    margin-left: auto;
-}
 .SlideHome-slide {
     position: relative;
 }
@@ -135,6 +163,14 @@ img {
     background-position: center;
 }
 
+.SlideHome-image{
+
+    transition: 2s;
+         
+}
+
+
+
 /** FRONTPAGE **/
 
 .Frontpage {
@@ -143,7 +179,8 @@ img {
     background-repeat: no-repeat;
 }
 .Frontpage-container {
-    background-color: var(--brand-primary-rgba);
+  /* background-color: var(--brand-primary-rgba);*/
+  background-image: linear-gradient(to right, #d6d6d61f, #d8d8d885, #b3b3b3e0, #bebebee5, #f4f9ffe0, #ffffffd7, #ebebebdc, #ebe9e9e3, #cfcfcff1, #e7e7e7ec, #d8d8d867, #ffffff3b);
     padding: 40px 0;
 }
 .Frontpage-container .content-container {
@@ -156,9 +193,10 @@ img {
 .Frontpage-container-info {
     flex:1;
 }
+
 .Frontpage-container-image {
     width: 300px;
-    height:300px;
+    height:360px;
     background-size: cover;
     flex:1;
 }
@@ -173,7 +211,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
 }
 .Productos-item {
-    height: 200px;
+    height: 250px;
     background-size: cover;
     padding: 20px;
     position: relative;
@@ -182,13 +220,14 @@ img {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 10px;
-    color: #D71B2C;
+    color: #022534;
     margin-bottom: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .Productos-item:hover .Productos-item-boton {
     background-color: #FFF;
     color:var(--brand-primary);
+    
 }
 
 
@@ -202,13 +241,82 @@ img {
     
     padding: 50px 20px;
     justify-content: space-between;
+    margin: auto;
 }
 .Footer-menu {
     list-style-type: none;
 }
 .Footer-menu-link {
-    color: #FFF;
+    color: #08546c;
 }
 .Footer-direction a {
-    color: #FFF;
+    color:#08546c;
+
 }
+
+.Footer-direction h2 {
+    color:#08546c;
+
+}
+
+
+.Footer h3{
+    font-size: 30px;
+    color:#08546c;
+}
+
+.Footer .redes-sociales {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #08546c;
+ }   
+ 
+ 
+ .Footer .redes-sociales a{
+    font-size: 45px;
+    color: #022534;
+    opacity: 0,70;
+    width: 40px;
+    height: 40px;
+    display: inline-block;  
+    line-height: 30px;
+    margin: 0 15px;
+    opacity: 0.7;
+ }
+ .Footer .redes-sociales a:hover {
+     opacity: 0.9;
+   }
+  
+
+   
+
+form{
+  background: #e6e6e6;
+  padding: 30px 0;
+  width: 100%;
+  height: 300px;
+  
+}
+
+.form .mini-caja{
+  position: relative;
+  margin-left: 850px;
+  height: 40px;
+}
+h3 {
+    font-size: 20px;
+    color: rgb(15, 15, 15);
+    text-align: center;
+  }
+
+ .btn-form { 
+    border: none;
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  
+  
