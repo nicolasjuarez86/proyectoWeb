@@ -11,7 +11,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel ="icon" href="../images/icono/homeland-logo-blue1.ico">
+    <link rel ="icon" href="../images/iconito/icono-homeland.ico">
 
 
     <script src="../javascript/lib/glider.min.js"></script>
@@ -22,17 +22,18 @@
 
 
     <header class="Header">
-        <div class="content-container">
+        
             <div class="Header-content">
                 <a class="Header-logo"></a>
-                <nav>
+                <nav id = nav1>
                     <ul class="Menu">
                         <li class="Menu-item"><a class="Menu-link" href="index.html">Home</a></li>
-                        <li class="Menu-item"><a class="Menu-link" href="">Sobre Nosotros</a></li>
                         <li class="Menu-item"><a class="Menu-link" href="productos.html">Productos</a></li>
+                        <li class="Menu-item"><a class="Menu-link" href="">Nosotros</a></li>
                         <li class="Menu-item"><a class="Menu-link" href="">Contacto</a></li>
                     </ul>
                 </nav>
+        <div class="content-container">      <!--modifique el div porque no me dejaba editar el nav-->  
                 <div class="Sidebar">
                     <nav class="navbar navbar-light bg-light fixed-top">
                         <div class="container-fluid">
@@ -54,6 +55,7 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Productos</a>
+                                                                                      
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Contacto</a>
@@ -92,6 +94,7 @@
                 </div>
                 <button aria-label="Previous" class="glider-prev">«</button>
                 <button aria-label="Next" class="glider-next">»</button>
+               
             </div>
 
             <div class="Frontpage-container">
@@ -116,6 +119,40 @@
                 </div>
             </div>
 
+            <div class="Frontpage-container">
+                <div class="content-container">                
+                    <div class="Frontpage-container-image" style="background-image:url('../images/home/cables-section.jpg')"></div>                   
+                    <div class="Frontpage-container-info">
+                        <h2 class="Frontpage-container-title">Accesorios</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.</p>   
+                        <a class="boton boton--primary" href="productos.html">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" method= "post" id ="form">
+                <div class="form">
+                    <h3>Consulta tu presupuesto!</h3>
+                    <div class = "mini-caja">
+                        <input type="text" name="" id="name" required>
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class = "mini-caja">
+                        <input type="email" name="" id="name" required>
+                        <label for="">e-mail</label>
+                    </div>
+                    <div class = "mini-caja">
+                        <input type="text" name="" id="name" required>
+    
+                        
+                    </div>
+                    <button type="submit" class="btn-form">Enviar</button>
+                </div>
+           
+            </form>  
+            
+
+
         </div>
     </section>
     <footer class="Footer">
@@ -131,7 +168,7 @@
         <!--<a class="Header-logo"></a>-->
 
         <div  class = "redes-sociales">
-                
+                <h4>¡Seguinos en nuestras redes sociales!</h4>
             <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
