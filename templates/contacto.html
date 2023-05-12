@@ -71,36 +71,72 @@
     
     <section>
         <div class="ViewFull Section">
-            <div class="content-container">
-                <h1 class="Title">Nuestros productos</h1>
-                <div class="Productos">
-                    <div class="Productos-item" style="background-image:url('../images/productos-section/guitar-section-.png')">
-                        <a class="LinkWrapper" href=""></a>
-                        <div class="Productos-item-title">Guitarras</div>
-                    </div>
-                    <div class="Productos-item" style="background-image:url('../images/productos-section/piano-section-.png')">
-                        <a class="LinkWrapper" href=""></a>
-                        <div class="Productos-item-title">Pianos</div>
-                    </div>
-                    <div class="Productos-item" style="background-image:url('../images/productos-section/bajo-section-.png')">
-                        <a class="LinkWrapper" href=""></a>
-                        <div class="Productos-item-title">Bajos</div>
-                    </div>
-                    <div class="Productos-item" style="background-image:url('../images/productos-section/baterias-section-1.png')">
-                        <a class="LinkWrapper" href=""></a>
-                        <div class="Productos-item-title">Baterias</div>
-                    </div>
-                    <div class="Productos-item" style="background-image:url('../images/productos-section/pedaleras-section.png')">
-                        <a class="LinkWrapper" href=""></a>
-                        <div class="Productos-item-title">Pedaleras</div>
-                    </div>
-                    <div class="Productos-item" style="background-image:url('../images/productos-section/amplificador-section.png')">
-                        <a class="LinkWrapper" href=""></a>
-                        <div class="Productos-item-title">Amplificadores</div>
+            <div class="Form">
+
+                <h1 class="Title">Contacto</h1>
+
+                <div class="ViewFull-body">
+
+                    Si necesita contactarse con nosotros complete el siguiente formulario y a la brevedad nos comunicaremos con usted. <br>
+
+                    
+                    Teléfono Recepción: <a href="tel:47966850">4796-6850.</a>  <br>
+                    
+                    Horario de 9 a 18 hs. <br>
+
+                    <a href="mailto:info@homeland.com">info@homeland.com</a>
+                    
+                </div>
+                <form id="formulario" method="post" enctype="multipart/form-data" class="Form Form--stacked">
+
+                <div class="Form-row attribute-nombre">
+                    <label class="Form-label">Nombre</label>
+                    <div class="Form-control ">
+                        <input class="input" type="text" size="70" name="" value="" required />			
                     </div>
                 </div>
-            </div>      
+
+
+                <div class="Form-row attribute-email">
+                    <label class="Form-label">E-mail</label>
+                    <div class="Form-control">
+                        <input class="input" type="email" size="20" name="" value="" required />			
+                    </div>
+                </div>
+
+
+                <div class="Form-row attribute-telefono">
+                    <label class="Form-label">Teléfono</label>
+                    <div class="Form-control ">
+                        <input class="input" type="text" size="70" name="" value="" required />		
+                    </div>
+                </div>
+
+
+                <div class="Form-row attribute-mensaje">
+                <label class="Form-label">
+                    Consulta 
+                    <span class="Form-label">(Opcional)</span>	
+                </label>
+                <div class="Form-control ">
+                    <textarea class="input" name="" rows="5" ></textarea>			
+                </div>
+                </div>
+
+
+                <div class="Form-action">
+                    <input type="submit" name="ActionCollectInformation" value="Enviar" class="boton boton--primary" />
+                </div>
+
+                </form>
+                <!-- Script que evita SPAM -->
+                <script>
+                    document.getElementById("formulario").setAttribute("action", "/content/action");
+                </script>
+
+            </div>  
         </div>
+
     </section>
     <footer class="Footer">
         <ul class="Footer-menu">
