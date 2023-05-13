@@ -404,5 +404,10 @@ a:hover {
     width: 100%;
 }
   
-  
-  
+.nosotros-p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 300;
+    color: var(--brand-primary);
+    }
