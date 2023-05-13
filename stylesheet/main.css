@@ -5,6 +5,7 @@
 :root {
 
     --brand-primary: #002030;
+    --brand-secondary: #eaeaea;
     --brand-primary-rgba: rgba(0, 32, 48, 0.7);
 }
 
@@ -77,6 +78,13 @@ a:hover {
 .ViewFull-body a {
     text-decoration: none;
 }
+.Section {
+    background-color: var(--brand-secondary);
+}
+.placeholder {
+    background-color: #d3d3d3;
+}
+
 
 /** SIDEBAR **/
 
@@ -97,13 +105,17 @@ a:hover {
 
 
 .Header {
- /*   background-color: var(--brand-primary);*/
-    background-color: #f4f4f5;
+    background-color: var(--brand-secondary);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1003;
+    border-bottom: 10px solid var(--brand-primary);
+    transition: border-bottom 0.5s;
+}
+.isScrolled.Header {
+    border-bottom: 5px solid;
 }
 .Header-content {
     padding: 20px 0;
@@ -215,16 +227,16 @@ a:hover {
     flex:1;
 }
 
-/** SECTION PRODUCTOS **/
+/** SECTION CATEGORIA **/
 
-.Productos {
+.Categorias {
     padding: 20px;
     display: grid;
     row-gap: 24px;
     column-gap: 24px;
     grid-template-columns: repeat(3, 1fr);
 }
-.Productos-item {
+.Categorias-item {
     height: 250px;
     background-size: cover;
     padding: 20px;
@@ -235,10 +247,10 @@ a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transition: all 0.5s;    
 }
-.Productos-item:hover {
+.Categorias-item:hover {
     box-shadow: 0 0 13px rgba(0,0,0,0.8);
 }
-.Productos-item-title {
+.Categorias-item-title {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 10px;
@@ -246,10 +258,46 @@ a:hover {
     margin-bottom: 20px;
     font-weight: 400;
 }
-.Productos-item:hover .Productos-item-boton {
+.Categorias-item:hover .Categorias-item-boton {
     background-color: #FFF;
     color:var(--brand-primary);
     
+}
+
+
+/** PRODUCTOS **/
+
+.Productos {
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    display: grid;
+    row-gap: 24px;
+    column-gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.Productos-item {
+    width: 250px;
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.5s;    
+    text-align: center;
+    justify-self: center;
+}
+.Productos-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background: #fff;    
+}
+.Productos-item-image {
+    height:200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.Productos-item img {
+    height:100%;
+    width:auto;
 }
 
 

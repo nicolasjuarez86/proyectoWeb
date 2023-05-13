@@ -3,7 +3,7 @@
 
         return this.each(function() {
 
-            var $placeholder = $("<div>");
+            var $placeholder = $("<div class='placeholder'>");
             var $this = $(this);
             
             $placeholder.css({width: $this.width(), height: $this.height()});
