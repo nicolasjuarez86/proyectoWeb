@@ -153,7 +153,11 @@ a:hover {
     height: 70px;
     transition: height 0.5s, width 0.5s;
 }
-
+@media (max-width:64em) {
+    .Header {
+        padding: 10px 0;
+    }
+}
 
 /** MENU **/
 
@@ -175,7 +179,11 @@ a:hover {
 .Menu-link:hover {
     border-bottom-color: var(--brand-primary);
 }
-
+@media (max-width:64em) {
+    .Menu, .Menu-nav {
+        display:none;
+    }
+}
 
 
 
@@ -196,12 +204,11 @@ a:hover {
     background-position: center;
 }
 
-.SlideHome-image{
-
-    transition: 2s;
-         
+@media (max-width:50em) {
+    .SlideHome-image {
+        height: 300px;
+    }
 }
-
 
 
 /** FRONTPAGE **/
@@ -237,6 +244,30 @@ a:hover {
     height:360px;
     background-size: cover;
     flex:1;
+}
+
+@media (max-width:50em) {
+    .Frontpage-container .content-container {
+        flex-direction: column;
+    }
+    .Frontpage-container .boton {
+        position: static;
+    }
+    .Frontpage-container-image {
+        align-self: center;
+        flex: auto;
+        width: 100%;
+    }  
+    .Frontpage-container--inverted .Frontpage-container-image {
+        order: 0;
+    }  
+}
+@media (max-width:30em) {
+    .Frontpage-container-image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
 }
 
 /** SECTION CATEGORIA **/
@@ -443,9 +474,12 @@ a:hover {
     padding: 50px 20px;
     justify-content: space-between;
     margin: auto;
+    gap: 40px;
 }
 .Footer-menu {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 .Footer-menu-link,
 .Footer-direction a{
@@ -457,6 +491,12 @@ a:hover {
 .Footer h3{
     font-size: 30px;
     color:#FFF;
+}
+
+@media (max-width: 50em) {
+    .Footer {
+        flex-direction: column;
+    }
 }
 
 /** SOCIAL **/
@@ -475,14 +515,19 @@ a:hover {
     height: 40px;
     display: inline-block;  
     line-height: 30px;
-    margin: 0 15px;
+    margin: 0 10px;
     opacity: 0.7;
  }
 
- .Social a:hover {
+.Social a:hover {
      opacity: 0.9;
-   }
-  
+}
+
+@media (max-width: 50em) {
+    .Social {
+        text-align: left;
+    }
+}   
 
 /** FORM **/   
 
@@ -496,6 +541,7 @@ a:hover {
     max-width: 950px;
     margin: 0 auto;
     color: #FFF;
+    padding: 0 20px;
 } 
 .Form-control {
     position: relative;
@@ -541,11 +587,25 @@ a:hover {
 #attribute-mensaje .input {
     height: 90px;
 }
-  
+
+@media (max-width:30em) {
+    .Form h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+
+    }
+    .Form h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
 .nosotros-p {
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
     font-weight: 300;
     color: var(--brand-primary);
-    }
+}
