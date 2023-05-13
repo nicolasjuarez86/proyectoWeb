@@ -190,7 +190,7 @@ a:hover {
 }
 .Frontpage-container {
   /* background-color: var(--brand-primary-rgba);*/
-  background-image: linear-gradient(to right, #d6d6d61f, #d8d8d885, #b3b3b3e0, #bebebee5, #f4f9ffe0, #ffffffd7, #ebebebdc, #ebe9e9e3, #cfcfcff1, #e7e7e7ec, #d8d8d867, #ffffff3b);
+  background-image: linear-gradient(to right, #d6d6d61f, #d8d8d885, #b3b3b3ea, #bebebee5, #f4f9ffe0, #ffffffd7, #ebebebdc, #ebe9e9e3, #cfcfcff1, #e7e7e7ec, #d8d8d867, #ffffff3b);
     padding: 40px 0;
 }
 .Frontpage-container .content-container {
