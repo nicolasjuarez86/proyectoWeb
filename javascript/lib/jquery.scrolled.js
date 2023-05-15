@@ -1,3 +1,16 @@
+
+/* SCROLLED */
+
+$(document).ready(function(){
+    var HEADER_HEIGHT = 170;
+    var HEADER_HEIGHT_SCROLLED = 90;
+  
+    $('.Header').scrolled({
+      scroll: HEADER_HEIGHT - HEADER_HEIGHT_SCROLLED
+    });
+  });
+  
+
 (function($){
     $.fn.scrolled = function(options) {
 

@@ -176,7 +176,7 @@ a:hover {
     border-bottom: 1px solid transparent;
     padding: 10px 0;
 }
-.Menu-link:hover {
+.Menu-link:hover, .Menu-link.Selected {
     border-bottom-color: var(--brand-primary);
 }
 @media (max-width:64em) {
@@ -245,7 +245,10 @@ a:hover {
     background-size: cover;
     flex:1;
 }
-
+.Frontpage-contacto {
+    background-color: #FFF;
+    padding: 40px 20px;
+}
 @media (max-width:50em) {
     .Frontpage-container .content-container {
         flex-direction: column;
@@ -281,14 +284,16 @@ a:hover {
 }
 .Categorias-item {
     height: 250px;
-    background-size: cover;
     padding: 20px;
     position: relative;
     background: #fff;
     border-bottom: #ddd 1px solid;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    transition: all 0.5s;    
+    transition: all 0.5s;  
+    background-size: 250px auto;
+    background-position: center;
+    background-repeat: no-repeat;      
 }
 .Categorias-item:hover {
     box-shadow: 0 0 13px rgba(0,0,0,0.8);
@@ -305,6 +310,20 @@ a:hover {
     background-color: #FFF;
     color:var(--brand-primary);
     
+}
+@media (max-width: 64em) {
+    .Categorias {
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 46em) {
+    .Categorias {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Categorias-item-title {
+        font-size: 30px;
+    }
 }
 
 
@@ -342,6 +361,17 @@ a:hover {
     height:100%;
     width:auto;
 }
+@media (max-width: 64em) {
+    .Productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 46em) {
+    .Productos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 
 /** PRODUCTO **/
 
@@ -367,6 +397,12 @@ a:hover {
 }
 .Producto-video {
     max-width:700px;
+}
+@media (max-width: 56em) {
+    .Producto {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -448,7 +484,12 @@ a:hover {
 .tab-contents .listado th {
     border-top:0;
 }
-@media all and (max-width: 43em) {
+@media (max-width: 56em) {
+    .tab-panel {
+        width: 100%;
+    }
+}
+@media (max-width: 43em) {
     .tab-panel .tabs, .tab-panel .tabs li {
         display:block;
         width:100%;
@@ -460,7 +501,11 @@ a:hover {
     #allcontent .tab-panel .tabs li a {
         border-bottom:0;
     }
+    .tab-content {
+        padding: 40px 0;
+    }
 }
+
 
 
 
@@ -529,19 +574,33 @@ a:hover {
     }
 }   
 
+
+.Nosotros {
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 40px 20px;
+}
+.Nosotros-body {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 300;
+    color: var(--brand-primary);
+}
+
 /** FORM **/   
 
 
 
 .Contacto {
-    background-color: #cdcdcd;
-    padding: 40px 0;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 40px 20px;
 }
 .Form {
     max-width: 950px;
     margin: 0 auto;
     color: #FFF;
-    padding: 0 20px;
 } 
 .Form-control {
     position: relative;
@@ -587,8 +646,13 @@ a:hover {
 #attribute-mensaje .input {
     height: 90px;
 }
-
+@media (max-width:65em) {
+    .Contacto {
+        margin: 0 20px;
+    }
+}
 @media (max-width:30em) {
+
     .Form h2 {
         font-size: 3rem;
         line-height: 3rem;
@@ -600,12 +664,3 @@ a:hover {
 }
 
 
-
-
-.nosotros-p {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: 300;
-    color: var(--brand-primary);
-}

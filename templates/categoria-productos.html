@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <link rel="stylesheet" type="text/css" href="../stylesheet/lib/glider.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../stylesheet/main.css">
-        <link rel ="icon" href="../images/iconito/icono-homeland.ico">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="../javascript/lib/glider.min.js"></script>
-        <script src="../javascript/lib/jquery-3.6.4.min.js"></script>
-        <script src="../javascript/lib/jquery.scrolled.js"></script>
-        <script src="../javascript/lib/jquery.ba-throttle-debounce.min.js"></script>
-        <script src="../javascript/main.js"></script>
-        <title>Productos</title>
-    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel ="icon" href="images/iconito/icono-homeland.ico">
+    <link rel="stylesheet" href="../stylesheet/main.css">
+
+    <script src="../javascript/lib/jquery-3.6.4.min.js"></script>
+    <script src="../javascript/lib/jquery.scrolled.js"></script>
+    <script src="../javascript/lib/jquery.ba-throttle-debounce.min.js"></script>
+    <title>Productos</title>
+</head>
 <body>
     <header class="Header">
         <div class="content-container">
@@ -28,7 +25,7 @@
                 <nav class="Menu-nav">
                     <ul class="Menu">
                         <li class="Menu-item"><a class="Menu-link" href="../index.html">Home</a></li>
-                        <li class="Menu-item"><a class="Menu-link" href="categoria-productos.html">Productos</a></li>
+                        <li class="Menu-item"><a class="Menu-link Selected" href="categoria-productos.html">Productos</a></li>
                         <li class="Menu-item"><a class="Menu-link" href="nosotros.html">Nosotros</a></li>
                         <li class="Menu-item"><a class="Menu-link" href="contacto.html">Contacto</a></li>
                     </ul>
@@ -41,16 +38,16 @@
                             </button>
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HOMELAND</h5>
-                                    <button type="button" class="boton-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HOMELAND</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
                                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                         <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="categoria-productos.html">Productos</a>
+                                            <a class="nav-link active" href="categoria-productos.html">Productos</a>
                                         </li>
                                        <li class="nav-item">
                                             <a class="nav-link" href="#">Nosotros</a>
@@ -75,27 +72,27 @@
             <div class="content-container">
                 <h1 class="Title">Nuestros productos</h1>
                 <div class="Categorias">
-                    <div class="Categorias-item" style="background-image:url('../images/productos-section/guitar-section-2.png')">
+                    <div class="Categorias-item" style="background-image:url('../images/productos-section/guitarra.jpg')">
                         <a class="LinkWrapper" href="guitarras.html"></a>
                         <div class="Categorias-item-title">Guitarras</div>
                     </div>
-                    <div class="Categorias-item" style="background-image:url('../images/productos-section/piano-section-2.png')">
+                    <div class="Categorias-item" style="background-image:url('../images/productos-section/piano.jpg')">
                         <a class="LinkWrapper" href="pianos.html"></a>
                         <div class="Categorias-item-title">Pianos</div>
                     </div>
-                    <div class="Categorias-item" style="background-image:url('../images/productos-section/bajo-section-2.png')">
+                    <div class="Categorias-item" style="background-image:url('../images/productos-section/bajo.jpg')">
                         <a class="LinkWrapper" href="bajos.html"></a>
                         <div class="Categorias-item-title">Bajos</div>
                     </div>
-                    <div class="Categorias-item" style="background-image:url('../images/productos-section/bateria-section-2.png')">
-                        <a class="LinkWrapper" href="baterias.html"></a>
+                    <div class="Categorias-item" style="background-image:url('../images/productos-section/baterias.jpg')">
+                        <a class="LinkWrapper" href="bateria.html"></a>
                         <div class="Categorias-item-title">Baterias</div>
                     </div>
-                    <div class="Categorias-item" style="background-image:url('../images/productos-section/pedaleras-section-2.png')">
+                    <div class="Categorias-item" style="background-image:url('../images/productos-section/pedaleras.jpg')">
                         <a class="LinkWrapper" href="pedaleras.html"></a>
                         <div class="Categorias-item-title">Pedaleras</div>
                     </div>
-                    <div class="Categorias-item" style="background-image:url('../images/productos-section/amplificadores-section-2.png')">
+                    <div class="Categorias-item" style="background-image:url('../images/productos-section/amplificadores.jpg')">
                         <a class="LinkWrapper" href="amplificadores.html"></a>
                         <div class="Categorias-item-title">Amplificadores</div>
                     </div>
