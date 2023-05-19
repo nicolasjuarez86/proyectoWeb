@@ -58,11 +58,10 @@
   border: 0;
   top: 50%;
   cursor: pointer;
-  color: #666;
+  color: #FFF;
   opacity: 1;
   line-height: 1;
-  transition: opacity .5s cubic-bezier(.17,.67,.83,.67),
-              color .5s cubic-bezier(.17,.67,.83,.67);
+
 }
 .glider-prev:hover,
 .glider-next:hover,
@@ -77,7 +76,7 @@
 .glider-next.disabled,
 .glider-prev.disabled {
   opacity: .25;
-  color: #666;
+  color: #FFF;
   cursor: default;
 }
 .glider-slide {
