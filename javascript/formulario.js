@@ -54,22 +54,90 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
-formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
+formulario.addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-	const terminos = document.getElementById('terminos');
-	if(campos.nombre && campos.correo && campos.telefono && terminos.checked ){
-		formulario.reset();
+    const terminos = document.getElementById("terminos");
+    if (campos.nombre && campos.correo && campos.telefono && terminos.checked) {
+		console.log(this)
+        this.contact_number.value = (Math.random() * 100000) | 0;
 
-		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-		}, 5000);
+		const formData = new FormData(this);
+//consulta1 envia mail al administrador
+		const data = {
+			service_id: 'service_79p088r',
+			template_id: 'template_njuqzsj',
+			user_id: 'BedjlkjvtC5Xg1FzB',
+			template_params: {
+				'user_name': formData.get('nombre'),
+				'user_email': formData.get('correo'),
+				'message': formData.get('consulta'),
+			}
+		
+		};
+		 
+		const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+			method: 'POST',
+			body: JSON.stringify(data),
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		
+		})
+		
+		//consulta 2 envia mail al usuario
+		const data2 = {
+			service_id: 'service_79p088r',
+			template_id: 'template_vd4rkx8',
+			user_id: 'BedjlkjvtC5Xg1FzB',
+			template_params: {
+				'user_name': formData.get('nombre'),
+				'user_email': formData.get('correo'),
+				'message': formData.get('consulta'),
+				
 
-		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('formulario__grupo-correcto');
+			}
+		
+		};
+		 //retrasa el envio de segundo mail, ya que la api esta limitada a una solicitud por segundo
+		setTimeout(async() => {
+			const response2 = await fetch('https://api.emailjs.com/api/v1.0/email/send', 
+		{
+			method: 'POST',
+			body: JSON.stringify(data2),
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		}
+		)
+			
+		 }, 1200);
+		
+
+		if(response.status == 200){
+			console.log("Email enviado con exito")
+		} else {
+			console.log("Error al enviar email: ", response)
+		}
+				
+        document
+		.getElementById("formulario__mensaje-exito")
+		.classList.add("formulario__mensaje-exito-activo");
+        setTimeout(() => {
+			document
+			.getElementById("formulario__mensaje-exito")
+			.classList.remove("formulario__mensaje-exito-activo");
+        }, 5000);
+		
+        document
+		.querySelectorAll(".formulario__grupo-correcto")
+		.forEach((icono) => {
+			icono.classList.remove("formulario__grupo-correcto");
 		});
-	} else {
-		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-	}
+    } else {
+		document
+		.getElementById("formulario__mensaje")
+		.classList.add("formulario__mensaje-activo");
+    }
+	formulario.reset();
 });
