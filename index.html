@@ -137,71 +137,71 @@
                     <h2>Contáctenos</h2>
                     <h3>Esperamos su consulta</h3>
                     <form id="formulario" method="post" enctype="multipart/form-data" class="Form Form--stacked">
-
-                        <div class="Form-row" id="attribute-nombre">
-                            <label class="Form-label">Nombre</label>
-                            <div class="Form-control ">
-                                <input class="input" type="text" size="70" name="nombre" value="" required />			
-                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                                <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos.</p>
-                            </div>
-                        </div>
-        
-        
-                        <div class="Form-row" id="attribute-correo">
-                            <label class="Form-label">E-mail</label>
-                            <div class="Form-control">
-                                <input class="input" type="email" size="20" name="correo" value="" required />			
-                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                            </div>
-                            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-                        </div>
-        
-        
-                        <div class="Form-row" id="attribute-telefono">
-                            <label class="Form-label">Teléfono</label>
-                            <div class="Form-control ">
-                                <input class="input" type="text" size="70" name="telefono" value="" required />		
-                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                            </div>
-                            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
-                        </div>
-        
-        
-                        <div class="Form-row" id="attribute-mensaje">
-                        <label class="Form-label">
-                            Consulta 
-                            <span class="Form-label">(Opcional)</span>	
-                        </label>
+                        <input type="hidden" name="contact_number">
+                    <div class="Form-row" id="attribute-nombre">
+                        <label class="Form-label">Nombre</label>
                         <div class="Form-control ">
-                            <textarea class="input" name="consulta" rows="5" ></textarea>			
+                            <input class="input" type="text" size="70" name="nombre" value="" required />			
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos.</p>
                         </div>
+                    </div>
+    
+    
+                    <div class="Form-row" id="attribute-correo">
+                        <label class="Form-label">E-mail</label>
+                        <div class="Form-control">
+                            <input class="input" type="email" size="20" name="correo" value="" required />			
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
-        
-                        <!-- Grupo: Terminos y Condiciones -->
-                        <div class="formulario__grupo" id="grupo__terminos">
-                            <label class="Form-label">
-                                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                                <a href="templates/terminos.html" target="_blank">Acepto los Terminos y Condiciones</a> 
-                            </label>
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                    </div>
+    
+    
+                    <div class="Form-row" id="attribute-telefono">
+                        <label class="Form-label">Teléfono</label>
+                        <div class="Form-control ">
+                            <input class="input" type="text" size="70" name="telefono" value="" required />		
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
-        
-                        <div class="formulario__mensaje" id="formulario__mensaje">
-                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-                        </div>
-        
-                        <div class="Form-action">
-                            <input type="submit" name="ActionCollectInformation" value="Enviar" class="boton boton--primary" />
-                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-                        </div>
-        
-        
-        
-                        </form>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                    </div>
+    
+    
+                    <div class="Form-row" id="attribute-mensaje">
+                    <label class="Form-label">
+                        Consulta 
+                        <span class="Form-label">(Opcional)</span>	
+                    </label>
+                    <div class="Form-control ">
+                        <textarea class="input" name="consulta" rows="5" ></textarea>			
+                    </div>
+                    </div>
+    
+                    <!-- Grupo: Terminos y Condiciones -->
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="Form-label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            <a href="terminos.html" target="_blank">Acepto los Terminos y Condiciones</a> 
+                        </label>
+                    </div>
+    
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+    
+                    <div class="Form-action">
+                        <input type="submit" name="ActionCollectInformation" value="Enviar" class="boton boton--primary" />
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                    </div>
+    
+    
+    
+                    </form>
         
                     <!-- Script que evita SPAM -->
                     <script>
-                        document.getElementById("formulario").setAttribute("action", "mail.php");
+                    document.getElementById("formulario").setAttribute("action", "/content/action");
                     </script>
                     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
                     <script src="javascript/formulario.js"></script>

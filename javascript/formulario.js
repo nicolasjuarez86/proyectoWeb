@@ -72,6 +72,7 @@ formulario.addEventListener("submit", async function (e) {
 				'user_name': formData.get('nombre'),
 				'user_email': formData.get('correo'),
 				'message': formData.get('consulta'),
+				'telefono': formData.get('telefono'),
 			}
 		
 		};
@@ -94,6 +95,7 @@ formulario.addEventListener("submit", async function (e) {
 				'user_name': formData.get('nombre'),
 				'user_email': formData.get('correo'),
 				'message': formData.get('consulta'),
+				'telefono ': formData.get('telefono'),
 				
 
 			}
