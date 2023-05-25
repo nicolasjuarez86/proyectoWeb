@@ -691,4 +691,33 @@ a:hover {
     }
 }
 
-
+.Frontpage-container .slider-marcas{
+    width: 70vh;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+ }
+ 
+ .Frontpage-container .slider-marcas .slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    width: calc(200px * 12);
+ }
+ 
+ .Frontpage-container.slider-marcas .slide{
+    width: 200px;
+ }
+ 
+ .Frontpage-container.slider-marcas .slide img{
+    width: 100%;
+ }
+ 
+ @keyframes scroll{
+    0%{
+ 
+       transform: translateX(0)
+    }
+    100% {
+       transform: translateX(calc(-200px * 6));
+    }
+ }
