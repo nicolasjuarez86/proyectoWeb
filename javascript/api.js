@@ -7,14 +7,15 @@ fetch('https://randomuser.me/api/')
     
     usuarios.forEach(usuario => {
       console.log(usuario.email);
-        const imagen = document.querySelector('.Nosotros-user-image');;
+      console.log(usuario.picture.large);
+        const imagen = document.querySelector('.Article-user-image');;
         imagen.src = usuario.picture.large;
     
-        const email = document.querySelector('.Nosotros-user-email');
+        const email = document.querySelector('.Article-user-email');
         email.textContent = usuario.email;
         email.href = usuario.email;    
 
-        const nombre = document.querySelector('.Nosotros-user-name');
+        const nombre = document.querySelector('.Article-user-name');
         nombre.textContent = `${usuario.name.first} ${usuario.name.last}`;
     
     });
